@@ -1,0 +1,20 @@
+{
+  "name": "zephira-company-intelligence",
+  "version": "1.0.0",
+  "description": "Search company records, officers, ownership, corporate groups and financials with source provenance.",
+  "contextFileName": "GEMINI.md",
+  "settings": [{
+    "name": "Zephira dashboard MCP API key",
+    "description": "Active production dashboard key beginning zph_live_. Obtain it from dashboard.zephira.ai. API v2 Token credentials are separate.",
+    "envVar": "ZEPHIRA_API_KEY",
+    "sensitive": true
+  }],
+  "mcpServers": {
+    "zephira": {
+      "command": "node",
+      "args": ["${extensionPath}/bin/zephira-mcp.mjs"],
+      "env": { "ZEPHIRA_API_KEY": "${ZEPHIRA_API_KEY}" },
+      "timeout": 60000
+    }
+  }
+}

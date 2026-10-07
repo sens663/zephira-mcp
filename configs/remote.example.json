@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "zephira": {
+      "type": "http",
+      "url": "https://dashboard.zephira.ai/api/mcp",
+      "headers": { "Authorization": "Bearer REPLACE_WITH_YOUR_DASHBOARD_MCP_KEY" }
+    }
+  }
+}

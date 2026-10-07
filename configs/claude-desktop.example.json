@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "zephira": {
+      "command": "npx",
+      "args": ["-y", "github:sens663/zephira-mcp"],
+      "env": { "ZEPHIRA_API_KEY": "REPLACE_WITH_YOUR_DASHBOARD_MCP_KEY" }
+    }
+  }
+}

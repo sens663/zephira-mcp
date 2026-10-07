@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.zephira.dashboard/company-intelligence",
+  "description": "Search company records, officers, ownership, group structures and financials with provenance.",
+  "title": "Zephira Company Intelligence",
+  "version": "1.0.0",
+  "websiteUrl": "https://zephira.ai/developers/mcp/",
+  "repository": {
+    "url": "https://github.com/sens663/zephira-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dashboard.zephira.ai/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by an active production Zephira dashboard MCP key (zph_live_...). API v2 Token credentials are separate.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

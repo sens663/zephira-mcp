@@ -1,0 +1,15 @@
+{
+  "name": "zephira-mcp",
+  "version": "1.0.0",
+  "description": "Zephira MCP client integrations and a dependency-free stdio bridge to the hosted company-intelligence server.",
+  "type": "module",
+  "bin": { "zephira-mcp": "bin/zephira-mcp.mjs" },
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test", "check": "node --check bin/zephira-mcp.mjs && node --check lib/bridge.mjs" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/sens663/zephira-mcp.git" },
+  "homepage": "https://zephira.ai/developers/mcp/",
+  "bugs": { "url": "https://github.com/sens663/zephira-mcp/issues" },
+  "keywords": ["mcp", "zephira", "company-data", "ownership", "financials", "gemini-cli-extension"],
+  "files": ["bin", "lib", "gemini-extension.json", "GEMINI.md", "server.json", "README.md", "LICENSE"]
+}
